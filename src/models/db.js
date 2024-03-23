@@ -7,5 +7,3 @@ mongoose.connect(DB_CONNECTION_STRING);
 
 exports.restaurantModel = mongoose.model("restaurants", mongoose.Schema(restaurantSchema));
 exports.categoryModel = mongoose.model("categories", mongoose.Schema(categorySchema));
-exports.itemModel = mongoose.model("items", mongoose.Schema(itemSchema));
-

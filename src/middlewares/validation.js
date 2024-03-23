@@ -23,3 +23,10 @@ exports.categorySchema = zod.object({
 
 exports.idSchema = zod.string().min(1)
 
+exports.itemSchema = zod.object({
+  category_id: zod.string().min(1),
+  item: zod.object({
+    name: zod.string().min(3).max(50),
+    price: zod.number().min(1).max(10000)
+  })
+})
