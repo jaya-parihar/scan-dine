@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const restaurantController = require("./../controllers/restaurant-controller");
-const categoryController = require("./../controllers/category-controller");
+const restaurantController = require("../controllers/restaurant-controller");
+const categoryController = require("../controllers/category-controller");
 
 router.get("/restaurants", restaurantController.getAllRestaurants)
 

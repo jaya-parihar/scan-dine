@@ -7,7 +7,7 @@ app.use(express.json());
 
 const { PORT } = process.env
 
-app.use('/admin', require("./routers/restaurant-router"));
+app.use('/admin', require("./routers/admin-router"));
 
 app.listen(PORT, () => {
   console.log("server started");
